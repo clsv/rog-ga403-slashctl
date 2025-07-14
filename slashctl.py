@@ -4,8 +4,8 @@ import hid
 import time
 
 VENDOR_ID = 0x0B05
-PRODUCT_ID = 0x19B6  # или 0x193B для обычной SlashDevice
-REPORT_ID = 0x5D     # 0x5E для обычной модели
+PRODUCT_ID = 0x19B6  # or 0x193B for regular SlashDevice
+REPORT_ID = 0x5D     # 0x5E for the regular model
 
 def write_packet(device, payload: bytes, log=None):
     data = bytes([REPORT_ID]) + payload
